@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function Table (userInput, start, end)
+{
+   for (var loopCounter = start ; loopCounter <= end; loopCounter++)
+  {
+    document.write(userInput + " * " + loopCounter + " = " + (userInput*loopCounter) + "<br>");
+  }
+}
+
+var input;
+do{
+do {
+input = prompt("Enter a number : ");
+}while(isNaN(input))
+
+Table(input, 4, 9);
+
+alert(input);
+}while(input != -1);
+
+</script>
+</head>
+<body>
+Sample text
+</body>
+</html>

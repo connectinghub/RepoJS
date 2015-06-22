@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+var times = 0;
+function callme()
+{
+    alert("inside call me");
+}
+function caller(fpToCallMe, times)
+{
+    alert("Hi, I will call another function " +  times);
+    fpToCallMe(fpToCallMe, ++times);
+}
+
+//caller(caller, ++times);
+alert("afsdaf" + "afdsaf" + " " + "");
+</script>
+</head>
+<body>
+Sample text
+</body>
+</html>
