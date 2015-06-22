@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript">
+var degFahren, degCent;
+//degFahren = 9/5 + degCent + 32
+degCent = prompt("Please enter a value")
+if (degCent ==  '')
+{
+    alert("Please enter a value.");
+}
+if (isNaN(degCent))
+{
+ alert("Please enter a numeric value.")
+}
+else
+{
+    degFahren = 9/5 * degCent + 32;
+    document.write(degCent + "\xB0" +  " in Fahrenheit is " + degFahren + "\xB0" + "C" + "<br>");
+}
+
+</script>
+</head>
+<body>
+Sample text
+</body>
+</html>
