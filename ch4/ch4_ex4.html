@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml"> <head>
+<title>Debug: Times Table</title> 
+<script type="text/javascript">
+function FirstCall()
+{
+    alert("first call");
+    SecondCall()
+}
+function SecondCall()
+{
+    alert("second call");
+    ThirdCall()
+}
+function ThirdCall()
+{
+    debugger;
+    alert("third call");
+}
+</script>
+</head> <body>
+<form action="">
+<input type="button" name="btnClick" id="btnClick" onclick="FirstCall()">
+</form>
+</body>
+</html>
