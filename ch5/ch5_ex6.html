@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+function fix(fixNumber, decimalPlaces)
+{
+    var div = Math.pow(10, decimalPlaces)
+    fixNumber = Math.round(fixNumber * div)/div;
+    return fixNumber;
+}
+
+document.write(fix(prompt("Enter a number", 2), prompt("Enter decimal places", 2)));
+
+</script>
+</head>
+<body>
+123.454</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+var myString = "Welcome to Wrox books.";
+myString += "The Wrox website is www.wrox.com. ";
+myString += "Vist the Wrox website today. Thanks for buying Wrox";
+var foundAtPosition =0;
+var WroxCount =0;
+while(foundAtPosition != -1)
+{
+    foundAtPosition =  myString.indexOf("wrox", foundAtPosition);
+    if (foundAtPosition != -1)
+    {
+        WroxCount++;
+        foundAtPosition++;
+    }
+}
+document.write(myString + "<br>");
+document.write("Wrox keyborad found at " + WroxCount + "  positions.");
+</script>
+</head>
+<body>
+Sample text
+</body>
+</html>
